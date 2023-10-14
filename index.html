@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .navBar {
+            width: 100%;
+            height: 100vh;
+            background-image: url("1212.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 5rem;
+        }
+
+        #logo {
+            color: white;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        span {
+            color: red;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 1rem 1.5rem;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn {
+            color: white;
+            border: 3px solid rgb(225, 45, 45);
+            background-color: rgb(225, 45, 45);
+            border-radius: 30px;
+            padding: 10px 15px;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        .btn:hover {
+            border: 3px solid rgb(218, 28, 28);
+            background-color: rgb(218, 28, 28);
+            transform: scale(1.3);
+        }
+
+        li a:hover {
+            color: red;
+        }
+
+        .intro {
+            padding: 5rem 5rem;
+            color: white;
+        }
+
+        h3,
+        .pro {
+            font-size: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        form {
+            margin-top: 1.5rem;
+
+        }
+
+        #mail {
+            width: 25%;
+            height: 32px;
+            border-radius: 30px;
+            border: 1px solid rgb(241, 241, 241);
+            text-indent: 10px;
+        }
+
+        #submit {
+            width: 8%;
+            color: white;
+            height: 30px;
+            border: 1px solid red;
+            border-radius: 30px;
+            background-color: red;
+            position: absolute;
+            top: 303px;
+            left: 255px;
+
+        }
+
+        img {
+            width: 50%;
+            border: 1px solid rgb(27, 26, 26);
+        }
+
+        #about {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 5rem 1rem;
+        }
+
+        #about div {
+            display: flex;
+            justify-content: end;
+        }
+
+        aside {
+            padding: 2rem 3rem;
+            padding-right: 10rem;
+        }
+
+        aside h3 {
+            letter-spacing: 1.5px;
+
+            margin: 0.6rem 0;
+        }
+
+        aside p {
+            word-spacing: 2px;
+            letter-spacing: 1.5px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 15%;
+            color: white;
+            height: 30px;
+            border: 2px solid red;
+            border-radius: 30px;
+            background-color: red;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+
+        #services,
+        #skills {
+            background-color: black;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        #services .web,
+        #skills .web {
+            display: flex;
+
+        }
+
+        .title {
+            margin: 3rem;
+        }
+
+        #services button {
+            width: 30%;
+            cursor: pointer;
+
+        }
+
+        #services .web div {
+            width: 30%;
+            border: 2px solid rgb(33, 32, 32);
+            border-radius: 10px;
+            padding: 3rem;
+            background-color: rgb(33, 32, 32);
+            margin: 10px;
+        }
+
+        .web h2 {
+            margin: 10px 0;
+
+        }
+
+        i {
+            cursor: pointer;
+            color: red;
+        }
+
+        #skills .web div {
+            width: 20%;
+            border: 2px solid rgb(33, 32, 32);
+            border-radius: 10px;
+            padding: 2rem;
+            background-color: rgb(33, 32, 32);
+            margin: 10px;
+        }
+
+        #contact {
+            background-color: black;
+            color: white;
+            padding: 3rem;
+        }
+
+        #contact div {
+            text-align: center;
+        }
+        footer{
+            color: white;
+            background-color: #191919;
+            text-align: center;
+            padding: 3rem; 
+        }
+        footer p{
+            padding: 1rem 0;
+        }
+        footer a{
+            padding: 0 1rem;
+        }
+        footer a{
+            text-decoration: none;
+        }
+        footer div i:hover{
+            /* text-decoration: none; */
+            transform: scale(1.3);
+            transition: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navBar">
+        <nav>
+            <h2 id="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+            <a class="btn" href="">Subscribe</a>
+        </nav>
+        <div class="intro">
+            <h3>Hi, I'm </h3>
+            <h1>Aryan Ahmad <span>Khan</span></h1>
+            <h2 class="pro">I'm a Frontend Developer</h2>
+
+            <form>
+                <input type="text" id="mail" placeholder="Email">
+                <input type="submit" id="submit" name="submit" value="let's Start">
+            </form>
+        </div>
+    </header>
+
+    <section id="about">
+        <div>
+            <img src="1.png" alt="img">
+        </div>
+        <aside>
+            <h1>About Me</h1>
+            <h3>Developer <span> & Designer</span></h3>
+            <p>Dedicated and enthusiastic aspiring Frontend Web Developer seeking an internship opportunity to apply and
+                expand my knowledge of web development, HTML, CSS, Bootstrap, JavaScript, and responsive design while
+                contributing to the success of a dynamic team.
+            </p>
+
+            <button>Let's Start</button>
+        </aside>
+    </section>
+
+    <section id="services">
+        <h1 class="title">Our Services</h1>
+        <div class="web">
+            <div>
+                <i class="fa-solid fa-bars" style="font-size: 3rem;"></i>
+                <h2>Web development</h2>
+                <p>We focus on the user interface and user experience. We use technologies like HTML, CSS, and
+                    JavaScript to create visually appealing and interactive web pages.</p>
+                <button>Ream More</button>
+            </div>
+            <div>
+                <i class="fa-regular fa-user" style="font-size: 3rem;"></i>
+                <h2>Web development</h2>
+                <p>We focus on the user interface and user experience. We use technologies like HTML, CSS, and
+                    JavaScript to create visually appealing and interactive web pages..</p>
+                <button>Ream More</button>
+            </div>
+            <div>
+                <i class="fa-regular fa-bell" style="font-size: 3rem;"></i>
+                <h2>Web development</h2>
+                <p>We focus on the user interface and user experience. We use technologies like HTML, CSS, and
+                    JavaScript to create visually appealing and interactive web pages.</p>
+                <button>Ream More</button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="web">
+            <div>
+                <i class="fa-brands fa-html5" style="font-size: 3rem;"></i>
+                <h2>Html5</h2>
+                <p>HTML5 introduces new elements and features for structuring content, improving interactivity and
+                    making it the foundation of modern web development.</p>
+
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt" style="font-size: 3rem;"></i>
+                <h2>CSS3</h2>
+                <p>CSS3 offers advanced styling capabilities, including animations, gradients, and transitions, to
+                    enhance the visual design of websites.</p>
+
+            </div>
+            <div>
+                <i class="fa-brands fa-bootstrap" style="font-size: 3rem;"></i>
+                <h2>Bootstrap 5</h2>
+                <p>Bootstrap 5 is the latest version and provides a collection of pre-built, responsive design that make
+                    it easier to create visually appealing websites.</p>
+
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js" style="font-size: 3rem;"></i>
+                <h2>JavaScript</h2>
+                <p> JavaScript enables features like form validation, animations, and real-time updates, making it an
+                    essential component for both client-side and server-side scripting.</p>
+
+            </div>
+
+
+        </div>
+    </section>
+    <section id="contact">
+        <div>
+            <h2>Let Me Get You a <span> Beautiful</span> Website</h2>
+            <button>Hire</button>
+        </div>
+    </section>
+    <footer>
+        <h1>Aryan Ahmad Khan</h1>
+        <p>For more information, Please click on the link below to reach me out. </p>
+        <div>
+            <a href=""><i class="fa-brands fa-facebook" style="font-size: 3rem;"></i></a>
+            <a href=""><i class="fa-brands fa-instagram" style="font-size: 3rem;"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin" style="font-size: 3rem;"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
